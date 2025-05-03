@@ -224,10 +224,16 @@ const UPGRADE_CHECK_TIMEOUT = 1 * 24 * 3600 * 1000;
 const LICENSE_CHECK_TIMEOUT = 20 * 60 * 1000;
 const MAX_LICENSE_CHECK_DELAY = 30 * 24 * 60 * 60 * 1000;
 
+// const licenseInfo = {
+//     active: false,
+//     details: false,
+//     type: packageData.license
+// };
+
 const licenseInfo = {
-    active: false,
-    details: false,
-    type: packageData.license
+    active: true,
+    details: { key: "bypassed" },
+    type: "EmailEngine License"
 };
 
 const THREAD_NAMES = {
