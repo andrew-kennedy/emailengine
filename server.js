@@ -41,9 +41,7 @@ const {
     getBoolean,
     getWorkerCount,
     selectRendezvousNode,
-    checkLicense,
     checkForUpgrade,
-    setLicense,
     getRedisStats,
     threadStats,
     retryAgent
@@ -101,7 +99,6 @@ if (readEnvValue('BUGSNAG_API_KEY')) {
 const pathlib = require('path');
 const { redis, queueConf } = require('./lib/db');
 const promClient = require('prom-client');
-const fs = require('fs').promises;
 const crypto = require('crypto');
 const { compare: cv } = require('compare-versions');
 const Joi = require('joi');
