@@ -6,6 +6,7 @@ permissions:
   contents: write
   pull-requests: write
   packages: write
+  issues: write     # Add this to allow label creation
 name: Manage Release
 jobs:
   release_please:
